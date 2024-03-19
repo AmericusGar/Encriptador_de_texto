@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    
+    <header>
+        <img id="logo"    src="Logo-1.png" alt="Logo de Alura">
+    </header>
+    <main>
+            <section class="texto">
+             
+                <textarea id="texto-encriptado" class="campo-texto" placeholder="Escribe un texto" cols="30" rows="10" onkeypress="BlockChars(event)" ></textarea>
+                <div>
+                    <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="btn">
+                    <button id="btn-encriptar" class="btnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button id="btn-desencriptar" class="btnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div> 
+
+            </section>
+           
+            <section class="cMensaje">
+                
+                    <textarea type="text" id="campo-mensaje" class="campo-texto" placeholder="Texto no encontrado" cols="30" rows="10">
+
+                    </textarea>
+                    <div>
+                        <button class="btnCopiar" id="copiar" onclick="copiarTexto(texto)">Copiar</button>
+                    </div>
+            </section>
+            
+    
+        </main>
+        <footer class="footer">
+            <img src="github-white.png" width="20px" height="20px" alt="">
+            <p><strong>AmericusGar</strong></p>
+            </footer>
+
+        </article>
+        
+        
+    <script src="encriptador.js" ></script>
+</body>
+
+</html>
